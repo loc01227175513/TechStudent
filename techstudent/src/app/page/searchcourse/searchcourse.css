@@ -1,0 +1,56 @@
+.absolute{
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.trong {
+    flex: 1; 
+    height: 100%; 
+}
+.trong:hover{
+    cursor: not-allowed; 
+}
+.poputcart .filter{
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    z-index: 550;
+    transform: translateX(100%); /* Bắt đầu ở bên phải */
+    animation: slideIn 0.5s forwards; /* Thêm hiệu ứng */
+}
+
+
+.filter:hover .carthover {
+    display: block; /* Hiển thị khi hover */
+  }
+  
+  .carthover {
+    display: none; /* Ẩn mặc định */
+    background-color: white; /* Thêm nền trắng cho rõ ràng */
+    padding: 0.5rem; /* Thêm khoảng cách */
+    z-index: 10; /* Đảm bảo nó nằm trên các phần tử khác */
+  }
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%); /* Bắt đầu từ bên phải */
+    }
+    to {
+        transform: translateX(0); /* Kết thúc ở vị trí ban đầu */
+    }
+}
+@keyframes slideOut {
+    from {
+        transform: translateX(0); /* Bắt đầu từ vị trí ban đầu */
+    }
+    to {
+        transform: translateX(100%); /* Kết thúc ở bên phải */
+    }
+}
