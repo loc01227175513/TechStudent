@@ -1,0 +1,47 @@
+:root{
+    /* --color-primary: #32ADE6; */
+    --color-start:#ff6d1c;
+    --color-primary: #32ADE6; 
+
+}
+
+.prev-next-comment{
+    display: none;
+
+
+}
+.prev-next-comment i{
+    color: var(--color-primary);
+}
+.chucvu p{
+    font-size: 10px;
+}
+.startcomment i{
+    color: var(--color-start);
+}
+.next-comment i{
+    font-size: 10px;
+    color: var(--color-primary);
+}
+.xemtiep {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    
+}
+.xemtiep a{
+    color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+    .prev-next-comment{
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        justify-content: center;
+    }
+    .xemtiep{
+        display: none;
+    }
+  }

@@ -1,0 +1,169 @@
+:root{
+    --primary-color: #32ADE6;     /* Màu chính */
+
+}
+
+.poputcart{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 500;
+
+
+}
+.trong {
+    flex: 1; 
+    height: 100%; 
+}
+.trong:hover{
+    cursor: not-allowed; 
+}
+.poputcart .cart{
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    z-index: 550;
+    transform: translateX(100%); /* Bắt đầu ở bên phải */
+    animation: slideIn 0.5s forwards; /* Thêm hiệu ứng */
+}
+
+
+.cart:hover .carthover {
+    display: block; /* Hiển thị khi hover */
+  }
+  
+  .carthover {
+    display: none; /* Ẩn mặc định */
+    background-color: white; /* Thêm nền trắng cho rõ ràng */
+    padding: 0.5rem; /* Thêm khoảng cách */
+    z-index: 10; /* Đảm bảo nó nằm trên các phần tử khác */
+  }
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%); /* Bắt đầu từ bên phải */
+    }
+    to {
+        transform: translateX(0); /* Kết thúc ở vị trí ban đầu */
+    }
+}
+@keyframes slideOut {
+    from {
+        transform: translateX(0); /* Bắt đầu từ vị trí ban đầu */
+    }
+    to {
+        transform: translateX(100%); /* Kết thúc ở bên phải */
+    }
+}
+.list-none {
+    margin: 0;
+    padding: 0 0 0 5px;
+}
+.list-none .infor-product h6,
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.mr-3 .gap-4 input{
+    border: 1px solid black;
+    width: 80px;
+    padding-left: 35px;
+}
+.mr-3 .gap-4 p{
+    position: absolute;
+    font-size: 30px;
+}
+.mr-3 .gap-4 p:hover{
+    cursor: pointer;
+}
+.btn-thanhtoan {
+    border: 1px solid var(--primary-color);;
+    background-color: white;
+    padding: 16px 0;
+    margin: 12px 0;
+    border-radius: 8px;
+    color: var(--primary-color);;
+}
+.btn-thanhtoan:hover {
+    border: 1px solid white;
+    background-color: var(--primary-color);;
+
+    color: white;
+}
+.btn-cart {
+    border: 1px solid var(--primary-color);;
+    background-color: var(--primary-color);;
+    padding: 16px 0;
+    margin: 12px 0;
+    border-radius: 8px;
+    color: white;
+}
+.btn-cart:hover{
+    background-color: white;
+    color: var(--primary-color);;
+    border: 1px solid var(--primary-color);;
+
+
+}
+::-webkit-scrollbar {
+    width: 5px; 
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb {
+    background: #bfbebe; 
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.header-two{
+    background-color: rgba(0, 0, 0, 0.7);
+
+    width: 100%;
+    z-index: 1000;
+
+}
+.blur{
+    flex: 1;
+}
+.menu-header{
+    height: 100%;
+    overflow-y: scroll;
+    width: 300px;
+    background-color: white;
+    transform: translateX(100%); /* Bắt đầu ở bên phải */
+    animation: slideIn 0.5s forwards; /* Thêm hiệu ứng */
+
+}
+.div-close-header{
+    display: flex;
+    justify-content: start;
+    border-bottom: solid 1px black;
+}
+.close-header {
+    background-color: var(--primary-color);
+    padding: 5px 0;
+}
+.close-header :hover{
+   cursor: pointer;
+
+}
+.close-header i{
+    font-weight: bold;
+    color: black;
+}
+
+#panel-header{
+    color: #32ADE6;
+}
