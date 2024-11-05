@@ -1,0 +1,75 @@
+:root{
+    --color-primary:#32ADE6;
+    --color-body:#737477;
+    --color-border:#D4EDFB;
+    --color-start:#ff6d1c;
+
+}
+
+.header{
+    width: 100%;
+    background-color: var(--color-primary);
+    position: fixed;
+    top: 0;
+}
+.header p{
+    color: black;
+}
+.detail-lesson{
+    
+    height: 100vh;
+}
+.name-course h6{
+    font-weight: bold;
+}
+.name-lesson{
+    border-bottom: solid 1px var(--color-border);
+    margin: 5px;
+}
+.name-lesson i{
+    color: var(--color-body);
+}
+.danghoc{
+    background-color: var(--color-border);
+}
+.overflow-y-scroll{
+    height: 90vh;
+}
+.chucvu p{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.chucvu{
+    background-color: var(--color-border);
+    border-radius: 5px;
+}
+.binhluan{
+    background-color: var(--color-border);
+    border-radius: 5px;
+}
+.vietbinhluan textarea{
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 90%;
+    height: 100px;
+    border: solid 1px black;
+}
+.vietbinhluan i:hover{
+    cursor: pointer;
+}
+.fa-star{
+    color: var(--color-start);
+}
+.title-lesson h6{
+    font-size: 25px;
+    font-weight: bold;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #d6d6dd;
+    border-radius: 10px;
+}
